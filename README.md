@@ -10,23 +10,29 @@ This is a paper list for the multimodal dialogue systems topic.
 
 ### Images
 
-[GuessWhat?!](https://openaccess.thecvf.com/content_cvpr_2017/html/de_Vries_GuessWhat_Visual_Object_CVPR_2017_paper.html) Visual Object Discovery Through Multi-Modal Dialogue in CVPR2017, a two-player guessing game (1 oracle & 1 questioner). 
+[GuessWhat?!](https://openaccess.thecvf.com/content_cvpr_2017/html/de_Vries_GuessWhat_Visual_Object_CVPR_2017_paper.html) Visual Object Discovery Through Multi-Modal Dialogue in CVPR2017, a two-player guessing game (1 oracle & 1 questioner). [Code](https://github.com/GuessWhatGame/guesswhat)
 - **Data and task**: 
-  - **Data** images are from MS COCO dataset, questioners & oracles are from Amazon Mechanical Turk. Players are asked to shorten their dialogues to speed up the game (and therefore maximize their gains). The goal of the game is to locate an unknown object in a rich image scene (meaning that there're several objects in an image / photo) by asking a sequence of questions, eg. After a sequence of n questions (of yes / no / NA), it becomes possible to locate the object (highlighted by a green mask). Once the questioner has gathered enough evidence to locate the object, they notify the oracle that they are ready to guess the object. We then reveal the list of objects, and if the questioner picks the right object, we consider the game successful (*recall@k ??*).
-  - **Task**  The **oracle task** requires to produce a yes-no answer for any object within a picture given a natural language question. The  **questioner task** is divided into two different sub-tasks that are trained independently: The **Guesser** must predict the correct object
+  - **Data**: images are from **MS COCO dataset**, questioners & oracles are from **Amazon Mechanical Turk**. Players are asked to shorten their dialogues to speed up the game (and therefore maximize their gains). The goal of the game is to **locate an unknown object** in a **rich image scene** (meaning that there're several objects in an image / photo) by asking a sequence of questions, eg. After a sequence of n questions (of yes / no / NA), it becomes possible to locate the object (highlighted by a green mask). Once the questioner has gathered enough evidence to locate the object, they notify the oracle that they are ready to guess the object. We then reveal the list of objects, and if the questioner picks the right object, we consider the game successful (*recall@k ??*).
+  - **Task**: The **oracle task** requires to produce a yes-no answer for any object within a picture given a natural language question. The  **questioner task** is divided into two different sub-tasks that are trained independently: The **Guesser** must predict the correct object
 O_correct from the set of all objects O given an image I and a sequence of questions and answers D_J . The **Question Generator** must produce a new question q_T+1 Given an image I and a sequence of T questions and answers D_≤T .
 - **Problematic**:  How to create models that understand natural language descriptions and ground them in the visual world. Higher-level image understanding, like spatial reasoning and language grounding, is required to solve the proposed task.
 - **Baseline model**: 
   - **Oracle baseline**: a classification problem (yes/no/NA). Embedding = Image (VGG16) + Question (LSTM) + Crop (VGG16) + Spatial information (bbox) + Object Category taxonomy; MLP ; cross-entropy loss. **Reflection**  In general, we expect the object crop to contain additional information, such as color information, beside the object class. However, we find that the object category outperforms the object crop embedding. This might be partly due to the imperfect feature extraction from the crops.
-  - **Guesser**: a classification problem (among a list of objects). 
-- **Proposed papers & models:
+  - **Guesser**: a classification problem (among a list of objects). Embedding1 = Question(LSTM/HRED) + Image(VGG16), Embedding2 = Objects (MLP(Spatial+Category)), then dot product; **Reflection** In general, we find that including VGG features does not improve the performance of the LSTM and HRED models. We hypothesize that the VGG features are a too coarse representation of the image scene, and that most of the visual information is already encoded in the question and the object features (???)
+  - **Question Generator**: encoder-decoder structure: P(q_2|q_1,a_1,Image(vgg)), We use our questioner model to first generate a question which is then answered by the oracle model. We repeat this procedure 5 times to obtain a dialogue. We then use the best performing guesser model to predict the object and report its error as the metric for the QGEN model. **Reflection** using the Oracle’s answers while training the Question Generator introduces additional errors than using Ground Truth answers.
+- **Further papers & models:
+  - **Paper**:[End-to-end optimization of goal-driven and visually grounded dialogue systems](https://arxiv.org/abs/1703.05423) Reinforcement Learning applied to GuessWhat?! based on **policy gradient algorithms**. **Problematic**: Encoder-Decoder structure's drawbacks: 1. vast action space vs unseen scenarios, inconsistent dialogues 2. supervised learning in dialog systems does not account for the intrinsic planning problem, especially in task-oriented dialogues. 3. difficult in naturally integrating external contexts (common ground) 4. difficult in dialogue evaluation. **?quote?** In addition, successful applications of the RL framework to dialogue often rely on a predefined structure of the task, such as slot-filling tasks [Williams and Young, 2007] where the task can be casted as filling in a form. **Proposed model** kan bu dong
 
-[ReferIt]
 
-[Image Captioning] Images + captions 
-- **Data and task**: generating natural language descriptions of images.
-- **Baseline model**:
-- **Proposed papers & models**:
+[ReferIt](http://tamaraberg.com/referitgame/) [paper](http://tamaraberg.com/papers/referit.pdf) in EMNLP2014
+- **Task**: 2 players game, 1 give referring expressions of an object in the image and the other should label it on the image. 
+- **Data processing**: To avoid hand annotations, use attributes for referring expressions and a template-based parser. 
+- **Model** to generate referring expressions (a set of attributes, not in natural language) too much mathematics I'm blind.
+
+[Image Captioning] generating natural language descriptions of images.
+- **Data and task**: [MS Coco](https://arxiv.org/pdf/1405.0312.pdf) Images + captions (but captions are single words not sentences)
+- **Further papers & models**:
+  - [Object relation transformer](https://papers.nips.cc/paper/2019/file/680390c55bbd9ce416d1d69a9ab4760d-Paper.pdf) in NIPS2019 **Model** always Encoder-Decoder structure but this time a Transformer (!), given an input image, use object detection model to get appearance features and geometry features (actually meaning a bounding box and its object and features), take these as inputs of the Transformer 
 
 [Visual QA](https://visualqa.org/workshop.html) VQA datasets in CVPR2021,2020,2019,etc
 - **Data and task**: 
