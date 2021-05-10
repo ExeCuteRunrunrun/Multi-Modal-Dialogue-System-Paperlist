@@ -23,6 +23,17 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Visual Question Answering as a Multi-Task Problem](https://arxiv.org/pdf/2007.01780.pdf) arXiv2020
     - [Bottom-up and top-down attention for image captioning and visual question answering](https://arxiv.org/abs/1707.07998) in CVPR2018, winner of the 2017 Visual Question Answering challenge
     - [Multimodal Neural Graph Memory Networks for Visual Question Answering](https://www.aclweb.org/anthology/2020.acl-main.643.pdf) ACL2020, visual features + encoded region-grounded captions (of object attributes and their relationships) = two graph nets which compute question-guided contextualized representation for each, then the updated representations are written to an external spatial memory (??what's that??).
+    - [Cross-Modality Relevance for Reasoning on Language and Vision](https://www.aclweb.org/anthology/2020.acl-main.683.pdf) in ACL2020
+    - [Hypergraph Attention Networks for Multimodal Learning](https://bi.snu.ac.kr/~btzhang/selected_papers/CVPR2020_ESKimKOHZ.pdf) CVPR2020
+  - vision-language pretraining / representation learning
+    - [VisualBERT: A Simple and Performant Baseline for Vision and Language](https://arxiv.org/pdf/1908.03557.pdf) arXiv2019, ground element of language to image regions with self-attention
+    - [ViLBERT: Pretraining Task-Agnostic Visiolinguistic Representations for Vision-and-Language Tasks] NeuIPS2019
+    - [VL-BERT: Pre-training of Generic Visual-Linguistic Representations] ICRL2020
+    - [VinVL: Making Visual Representations Matter in Vision-Language Models]
+    - [ViLT: Vision-and-Language Transformer Without Convolution or Region Supervision] arXiv 2021
+    - [12-in-1: Multi-Task Vision and Language Representation Learning] CVPR2020
+    - [Unified Vision-Language Pre-Training for Image Captioning and VQA] AAAI2020
+    - [LXMERT: Learning Cross-Modality Encoder Representations from Transformers] EMNLP2019
   - Language prior issue
     - [AdaVQA: Overcoming Language Priors with Adapted Margin Cosine Loss](https://arxiv.org/pdf/2105.01993.pdf) in a perspective of feature space learning (not classification task)
     - [Making the V in VQA Matter: Elevating the Role of Image Understanding in Visual Question Answering](https://arxiv.org/abs/1612.00837) CVPR2017 VQA 2.0 is also for the purpose of balance language prior to images 
@@ -40,6 +51,9 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Hierarchical Graph Attention Network for Visual Relationship Detection](https://openaccess.thecvf.com/content_CVPR_2020/papers/Mi_Hierarchical_Graph_Attention_Network_for_Visual_Relationship_Detection_CVPR_2020_paper.pdf) CVPR2020 object-level graph: (1) woman (sit on) bench, (2) woman (in front of) water; triplet-level graph: relation between triplet(1) and triplet(2)
     - [Visual Relationship Detection With Visual-Linguistic Knowledge From Multimodal Representations](https://ieeexplore.ieee.org/ielx7/6287639/6514899/09387302.pdf) IEEE2021, relational visual-linguistic BERT
     - [Relation-Aware Graph Attention Network for Visual Question Answering](http://arxiv.org/pdf/1903.12314) ICCV2019, explicit relations of geometric positions and semantic interactions between objects, implicit relations of hidden dynamics between image regions
+    - [Fusion of Detected Objects in Text for Visual Question Answering] EMNLP2020
+    - [GraghVQA: Language-Guided Graph Neural Networks for Graph-based Visual Question Answering] arXiv2021
+    - [A Simple Baseline for Visual Commonsense Reasoning] ViGil@NeuIPS2019
   - Knowledge / cross-modal fusion / Graphs
     - [Towards Knowledge-Augmented Visual Question Answering](https://www.aclweb.org/anthology/2020.coling-main.169.pdf) Coling2020, capture the interactions between objects in a visual scene and entities in an external knowledge source, with many many graphs ...
     - [ConceptBert: Concept-Aware Representation for Visual Question Answering](https://www.aclweb.org/anthology/2020.findings-emnlp.44.pdf) EMNLP2020, learn a joint Concept-Vision-Language embedding (maybe similar to [[this paper](https://openreview.net/references/pdf?id=Uhl6chXANP)] in the way of adding "entity embedding" ?)
@@ -53,12 +67,29 @@ This is a paper list for the multimodal dialogue systems topic.
 (2) [**Visual Dialog**](https://visualdialog.org/) CVPR 2017, Open-domain dialogs & given an image, a dialog history, and a follow-up question about the image, the task is to answer the question. 
 - [VisDial v1.0 dataset](https://visualdialog.org/data) [[Paper](https://arxiv.org/abs/1611.08669)] [[Source Code to collect chat data](https://github.com/batra-mlp-lab/visdial-amt-chat)]
 - Further papers
-  - cross-modal information fusion / graph
-    - [KBGN: Knowledge-Bridge Graph Network for Adaptive Vision-Text Reasoning in Visual Dialogue](http://arxiv.org/pdf/2008.04858) ACM2020, 
-  - [Improving Generative Visual Dialog by Answering Diverse Questions](https://arxiv.org/pdf/1909.10470.pdf) EMNLP 2019, [[Code](https://github.com/vmurahari3/visdial-diversity)]
-  - [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585) ICCV2017 oral, [[Code](https://github.com/batra-mlp-lab/visdial-rl)
-  - [DualVD: An Adaptive Dual Encoding Model for Deep Visual Understanding in Visual Dialogue](https://arxiv.org/pdf/1911.07251.pdf)
-  - [Learning Dual Encoding Model for Adaptive Visual Understanding in Visual Dialogue](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9247486) IEEE2021
+  - cross-modal information fusion / deep understanding / reasoning / graph
+    - [KBGN: Knowledge-Bridge Graph Network for Adaptive Vision-Text Reasoning in Visual Dialogue](http://arxiv.org/pdf/2008.04858) ACM2020, here knowledge = text knowledge & vision knowledge, encoding (T2V graph & V2T graph) then bridging (update graph nodes) then storing then retrieving (via adaptive information selection mode)
+    - [DualVD: An Adaptive Dual Encoding Model for Deep Visual Understanding in Visual Dialogue](https://arxiv.org/pdf/1911.07251.pdf)
+    - [Learning Dual Encoding Model for Adaptive Visual Understanding in Visual Dialogue](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9247486) IEEE2021
+    - [Multi-step Reasoning via Recurrent Dual Attention for Visual Dialog](https://www.aclweb.org/anthology/P19-1648.pdf) ACL2019, iteratively refine the question's representation based on image and dialog history
+    - [Vokenization: Improving Language Understanding with Contextualized, Visual-Grounded Supervision] EMNLP2020
+    - [All-in-One Image-Grounded Conversational Agents] arXiv2019
+    - [Modeling Coreference Relations in Visual Dialog] EACL2021
+    - [Efficient Attention Mechanism for Handling All the Interactions between Many Inputs with Application to Visual Dialog] 2019
+  - pretraining / representation learning / bertologie
+    - [VD-BERT: A Unified Vision and Dialog Transformer with BERT] EMNLP2020
+    - [Large-scale Pretraining for Visual Dialog: A Simple State-of-the-Art Baseline] ECCV2020
+    - [Kaleido-BERT: Vision-Language Pre-training on Fashion Domain] arXiv2021
+    - [Oscar: Object-Semantics Aligned Pre-training for Vision-Language Tasks] ECCV2020
+  - visual retrieval / image retrieval
+    - [Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers] 
+    - [Exploring Phrase Grounding without Training: Contextualisation and Extension to Text-Based Image Retrieval] CVPRW2020
+  - Generative dialogue
+    - [Improving Generative Visual Dialog by Answering Diverse Questions](https://arxiv.org/pdf/1909.10470.pdf) EMNLP 2019, [[Code](https://github.com/vmurahari3/visdial-diversity)]
+    - 
+  - RL
+    - [Learning Cooperative Visual Dialog Agents with Deep Reinforcement Learning](https://arxiv.org/abs/1703.06585) ICCV2017 oral, [[Code](https://github.com/batra-mlp-lab/visdial-rl)]
+  
 
 (3) [**GuessWhat?!**](https://openaccess.thecvf.com/content_cvpr_2017/html/de_Vries_GuessWhat_Visual_Object_CVPR_2017_paper.html) Visual Object Discovery Through Multi-Modal Dialogue in CVPR2017, a two-player guessing game (1 oracle & 1 questioner). 
 - [[Code]](https://github.com/GuessWhatGame/guesswhat)
@@ -90,8 +121,15 @@ This is a paper list for the multimodal dialogue systems topic.
 (6) [OpenViDial: A Large-Scale, Open-Domain Dialogue Dataset with Visual Contexts]
 
 (7) [CLEVR-Dialog: A Diagnostic Dataset for Multi-Round Reasoning in Visual Dialog](https://www.aclweb.org/anthology/N19-1058) NAACL2019, [[code](https://github.com/satwikkottur/clevr-dialog)]
+- Further paper
+  - [VQA With No Questions-Answers Training](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9157617) CVPR2020
+  - [Domain-robust VQA with diverse datasets and methods but no target labels](https://arxiv.org/pdf/2103.15974.pdf) arXiv2021
 
-(8) [Talk the walk: Navigating new york city through grounded dialogue](https://arxiv.org/pdf/1807.03367.pdf)
+(8) Navigation 
+  - [Talk the walk: Navigating new york city through grounded dialogue](https://arxiv.org/pdf/1807.03367.pdf)
+  - [Improving Vision-and-Language Navigation with Image-Text Pairs from the Web] ECCV2020
+  - [Diagnosing Vision-and-Language Navigation: What Really Matters] arXiv2021
+  - [A Recurrent Vision-and-Language BERT for Navigation] arXiv2020
 
 
 #### 🌟🌟🌟 ----F-a-s-h-i-o-n----
@@ -125,16 +163,30 @@ This is a paper list for the multimodal dialogue systems topic.
 
 # Survey
 [Multimodal Research in Vision and Language: A Review of Current and Emerging Trends](https://arxiv.org/pdf/2010.09522v2.pdf)
-
+[Transformers in Vision: A Survey]
 
 # In general
+- Tasks
+  - Visual Question Answering, 
+  - Visual dialog
+  - Visual Commonsense Reasoning, 
+  - Image-Text Retrieval, 
+  - Referring Expression Comprehension, 
+  - Visual Entailment
+  - NL+V representation ==> multimodal pretraining
 - Issues / topics:
   - text and image bias
+  - VL or LV bertologie
   - visual understanding / reasoning / object relation
   - cross-modal text-image relation (attention on interaction)
   - incorporate knowledge / common sense (attention on knowledge)
+  - not so much talking about "image retrieval", most of them talk about "image caption", "ground language to image"
 - Often used model-elements :
   - [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks]() 2015
   - LSTM
   - Transformers
   - Graphs : attention graph, GCN, memory graph .........
+- often mentioned approaches:
+  - adversial training
+  - reinforcement learning
+  - graph neural network
