@@ -241,9 +241,7 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Guessing State Tracking for Visual Dialogue](https://github.com/GT-Vision-Lab/GuessWhich) ECCV2020
     - [Language-Conditioned Feature Pyramids for Visual Selection Tasks] EMNLP2020 [[Code](https://github.com/Alab-NII/lcfp)]
     - [Beyond task success: A closer look at jointly learning to see, ask, and GuessWhat](https://arxiv.org/abs/1809.03408) NAACL2019
-- Minecraft
-  - [Learning to execute instructions in a Minecraft dialogue](https://www.aclweb.org/anthology/2020.acl-main.232) [[Code](https://github.com/prashant-jayan21/minecraft-bap-models)] ACL2020
-  - [Collaborative Dialogue in Minecraft](https://www.aclweb.org/anthology/P19-1537) [[Code](https://github.com/prashant-jayan21/minecraft-dialogue)] ACL2020
+
 - [Friend, Collaborator, Student, Manager: How Design of an AI-Driven Game Level Editor Affects Creators] CHI2019
 
 
@@ -329,7 +327,10 @@ This is a paper list for the multimodal dialogue systems topic.
   - [MultiSubs: A Large-scale Multimodal and Multilingual Dataset] 2021
   - [Adversarial Multimodal Network for Movie Question Answering] 2019
   - [What Makes Training Multi-Modal Classification Networks Hard?] CVPR2020
-- [DVD: A Diagnostic Dataset for Multi-step Reasoning in Video Grounded Dialogue] 2021
+- [DVD: A Diagnostic Dataset for Multi-step Reasoning in Video Grounded Dialogue]() 2021
+- Minecraft
+  - [Learning to execute instructions in a Minecraft dialogue](https://www.aclweb.org/anthology/2020.acl-main.232) [[Code](https://github.com/prashant-jayan21/minecraft-bap-models)] ACL2020
+  - [Collaborative Dialogue in Minecraft](https://www.aclweb.org/anthology/P19-1537) [[Code](https://github.com/prashant-jayan21/minecraft-dialogue)] ACL2020
 - video & QA/Dialog papers
   - representation learning
     - VideoBERT: A Joint Model for Video and Language Representation Learning
@@ -362,11 +363,11 @@ This is a paper list for the multimodal dialogue systems topic.
 - [The Hateful Memes Challenge: Detecting Hate Speech in Multimodal Memes] NeuIPS2020
 
 # Survey
-[Multimodal Research in Vision and Language: A Review of Current and Emerging Trends](https://arxiv.org/pdf/2010.09522v2.pdf)
-[Transformers in Vision: A Survey]
-[Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods] 2019
+- [Multimodal Research in Vision and Language: A Review of Current and Emerging Trends](https://arxiv.org/pdf/2010.09522v2.pdf) arXiv2020
+- [Transformers in Vision: A Survey](https://arxiv.org/abs/2101.01169) arXiv2021
+- [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](https://arxiv.org/abs/1907.09358) JAIR2020
 
-# Other github paperlists 早点想到我也不至于搞这么久。。。
+# Other github paperlists
 - [Awesome-Visual-Transformer](https://github.com/dk-liang/Awesome-Visual-Transformer)
 - [Transformer-in-Vision](https://github.com/DirtyHarryLYL/Transformer-in-Vision)
 - [awesome-multimodal-ml](https://github.com/pliang279/awesome-multimodal-ml)
