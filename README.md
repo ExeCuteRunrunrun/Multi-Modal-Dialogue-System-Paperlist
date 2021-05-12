@@ -401,14 +401,15 @@ This is a paper list for the multimodal dialogue systems topic.
 - Often used model-elements :
   - [Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks](https://arxiv.org/abs/1506.01497) 2015
   - LSTM
+  - GANs
   - Transformers
   - Graphs : attention graph, GCN, memory graph .........
 - often mentioned approaches:
-  - adversarial training
+  - adversarial training 
   - reinforcement learning
   - graph neural network
   - joint learning / parel / Dual encoder / Dual attention
 - my questions
   - what does "adaptive" mean? why everyone likes this specific word?
   - "ground", mysterious word too...
-  - generally we don't publish code for papers with "graph" in title ???
+  - often can't find many codes for papers with "graph" or "reinforcement learning" in title ???
