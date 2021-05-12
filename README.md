@@ -89,6 +89,7 @@ This is a paper list for the multimodal dialogue systems topic.
   - reasoning
     - [KBGN: Knowledge-Bridge Graph Network for Adaptive Vision-Text Reasoning in Visual Dialogue](http://arxiv.org/pdf/2008.04858) ACM2020, here knowledge = text knowledge & vision knowledge, encoding (T2V graph & V2T graph) then bridging (update graph nodes) then storing then retrieving (via adaptive information selection mode)
     - [Multi-step Reasoning via Recurrent Dual Attention for Visual Dialog](https://www.aclweb.org/anthology/P19-1648.pdf) ACL2019, iteratively refine the question's representation based on image and dialog history
+    - [Recursive visual attention in visual dialog](https://arxiv.org/abs/1812.02664) CVPR2019 [[Code](https://github.com/yuleiniu/rva)]
     - [DMRM: A Dual-channel Multi-hop Reasoning Model for Visual Dialog](https://aaai.org/ojs/index.php/AAAI/article/view/6248) AAAI2020
     - [Visual Reasoning with Multi-hop Feature Modulation](https://arxiv.org/abs/1808.04446) [[Code](https://github.com/ethanjperez/film)] ECCV2018
     - [VisualCOMET: Reasoning About the Dynamic Context of a Still Image](https://arxiv.org/abs/2004.10796) [[Code](https://github.com/jamespark3922/visual-comet)] ECCV2020
@@ -115,14 +116,9 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Multi-View Attention Networks for Visual Dialog](https://arxiv.org/abs/2004.14025) [[Code](https://github.com/taesunwhang/MVAN-VisDial)] arXiv2020
     - [Efficient Attention Mechanism for Visual Dialog that Can Handle All the Interactions Between Multiple Inputs](https://arxiv.org/abs/1911.11390) [[Code](https://github.com/davidnvq/visdial)] ECCV2020
     - [Shuffle-Then-Assemble: Learning Object-Agnostic Visual Relationship Features](https://arxiv.org/abs/1808.00171) [[Code in TF](https://github.com/yangxuntu/vrd)] ECCV2018
-  - referring / embodiment / grounding
-    - [Where Are You? Localization from Embodied Dialog](https://www.aclweb.org/anthology/2020.emnlp-main.59.pdf) [[Code](https://github.com/batra-mlp-lab/WAY)] EMNLP2020
+  - referring / embodiment 
     - [Visual Reference Resolution using Attention Memory for Visual Dialog](http://papers.neurips.cc/paper/6962-visual-reference-resolution-using-attention-memory-for-visual-dialog.pdf) NIPS2017
     - [Referring Expression Generation via Visual Dialogue](https://github.com/llxuan/ReferWhat) NLPCC2020
-    - [Visual Referring Expression Recognition: What Do Systems Actually Learn?](https://www.aclweb.org/anthology/N18-2123) NAACL2018
-    - [Ask No More: Deciding when to guess in referential visual dialogue](https://www.aclweb.org/anthology/C18-1104) coling2018
-    - [Refer, Reuse, Reduce: Generating Subsequent References in Visual and Conversational Contexts](https://www.aclweb.org/anthology/2020.emnlp-main.353) EMNLP2020
-    - [Achieving Common Ground in Multi-modal Dialogue](https://www.aclweb.org/anthology/2020.acl-tutorials.3) ACL2020
   - use dialog history / user guided
     - [Making History Matter: History-Advantage Sequence Training for Visual Dialog](https://arxiv.org/abs/1902.09326) ICCV2019
     - [User Attention-guided Multimodal Dialog Systems](https://xuemengsong.github.io/sigir2019_umd.pdf) [[Code](https://github.com/ChenTsuei/UMD)] SIGIR2019
@@ -147,19 +143,6 @@ This is a paper list for the multimodal dialogue systems topic.
     - [12-in-1: Multi-Task Vision and Language Representation Learning](https://arxiv.org/abs/1912.02315) [[Code](https://github.com/facebookresearch/vilbert-multi-task)] CVPR2020
     - [Large-Scale Adversarial Training for Vision-and-Language Representation Learning](https://arxiv.org/abs/2006.06195) [[Code](https://github.com/zhegan27/VILLA)] NeurIPS 2020
     - [Integrating Multimodal Information in Large Pretrained Transformers](https://www.aclweb.org/anthology/2020.acl-main.214.pdf) [[Code](https://github.com/WasifurRahman/BERT_multimodal_transformer)] ACL2020
-  - visual retrieval / image retrieval / 
-    - [Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers](https://arxiv.org/abs/2103.16553) 2021 
-    - [Exploring Phrase Grounding without Training: Contextualisation and Extension to Text-Based Image Retrieval](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w56/Parcalabescu_Exploring_Phrase_Grounding_Without_Training_Contextualisation_and_Extension_to_Text-Based_CVPRW_2020_paper.pdf) CVPRW2020
-    - [Interactive Classification by Asking Informative Questions](https://www.aclweb.org/anthology/2020.acl-main.237) [[Code](https://github.com/asappresearch/interactive-classification)] ACL2020
-    - [Toward General Scene Graph: Integration of Visual Semantic Knowledge with Entity Synset Alignment](https://www.aclweb.org/anthology/2020.alvr-1.2) [[Code](https://github.com/videoturingtest/alvr-ESA) wow finally a code for graph] ALVR2020
-    - [Dialog-based Interactive Image Retrieval](https://arxiv.org/abs/1805.00145) [[Code Fashion retrieval](https://github.com/XiaoxiaoGuo/fashion-retrieval)] NeuIPS2018
-    - [I Want This Product but Different : Multimodal Retrieval with Synthetic Query Expansion](https://arxiv.org/abs/2102.08871) 2021
-  - image editing / text-to-image
-    - [Sequential Attention GAN for Interactive Image Editing] ACM2020
-    - [Tell, Draw, and Repeat: Generating and Modifying Images Based on Continual Linguistic Instruction] ICCV2019
-    - [ChatPainter: Improving Text to Image Generation using Dialogue] ICLR2018
-    - [Adversarial Text-to-Image Synthesis: A Review] 2021
-    - [A Multimodal Dialogue System for Conversational Image Editing] 2020
   - Generative dialogue / diverse
     - [Improving Generative Visual Dialog by Answering Diverse Questions](https://arxiv.org/pdf/1909.10470.pdf) EMNLP 2019, [[Code](https://github.com/vmurahari3/visdial-diversity)]
     - [Visual Dialogue State Tracking for Question Generation](https://arxiv.org/abs/1911.07928) [[Code is in the series of guesswhat guesswhich visdial](https://github.com/xubuvd/guesswhat)] AAAI2020
@@ -187,23 +170,8 @@ This is a paper list for the multimodal dialogue systems topic.
     - [A Linguistic Analysis of Visually Grounded Dialogues Based on Spatial Expressions](https://www.aclweb.org/anthology/2020.findings-emnlp.67) EMNLP finds 2020
     - [Probabilistic framework for solving Visual Dialog](https://arxiv.org/abs/1909.04800) PR 2020
     - [Learning Goal-Oriented Visual Dialog Agents: Imitating and Surpassing Analytic Experts](https://arxiv.org/abs/1907.10500) IEEE2019
-  - goal-oriented
-    - [Answerer in Questioner's Mind for Goal-Oriented Visual Dialogue](http://papers.neurips.cc/paper/7524-answerer-in-questioners-mind-information-theoretic-approach-to-goal-oriented-visual-dialog.pdf) [[Code](https://github.com/naver/aqm-plus)] NeurIPS 2018
-    - [End-to-end optimization of goal-driven and visually grounded dialogue systems](https://arxiv.org/abs/1703.05423) IJCAI2017
-    - [Learning Goal-Oriented Visual Dialog via Tempered Policy Gradient and Code](https://github.com/ruizhaogit/GuessWhat-TemperedPolicyGradient) IEEE2018
-    - [Answer-Driven Visual State Estimator for Goal-Oriented Visual Dialogue](https://arxiv.org/abs/2010.00361) [[Code](https://github.com/zipengxuc/ADVSE-GuessWhat)] ACM MM 2020
-    - [Building Task-Oriented Visual Dialog Systems Through Alternative Optimization Between Dialog Policy and Language Generation](https://www.aclweb.org/anthology/D19-1014) EMNLP2019
-    - [Storyboarding of Recipes: Grounded Contextual Generation](https://www.aclweb.org/anthology/P19-1606) [[Script Data](https://github.com/khyathiraghavi/storyboarding_data)] DGS@ICLR2019
-    - [Gold Seeker: Information Gain From Policy Distributions for Goal-Oriented Vision-and-Langauge Reasoning](https://arxiv.org/abs/1812.06398) CVPR2020
-  - open-domain
-    - [Multi-Modal Open-Domain Dialogue](https://arxiv.org/abs/2010.01082) 2020
-    - [Open Domain Dialogue Generation with Latent Images](https://arxiv.org/abs/2004.01981) 2020
-    - [Image-Chat: Engaging Grounded Conversations] ACL2020
-    - [The Dialogue Dodecathlon: Open-Domain Knowledge and Image Grounded Conversational Agents](https://www.aclweb.org/anthology/2020.acl-main.222.pdf) ACL2020
-  - evaluation
-    - [A Revised Generative Evaluation of Visual Dialogue](https://arxiv.org/abs/2004.09272) [[Code](https://github.com/danielamassiceti/geneval_visdial)] arXiv2020
-    - [Evaluating Visual Conversational Agents via Cooperative Human-AI Games](https://arxiv.org/abs/1708.05122) [[Code for GuessWhich](https://github.com/GT-Vision-Lab/GuessWhich)] 2017
-    - [The Interplay of Task Success and Dialogue Quality: An in-depth Evaluation in Task-Oriented Visual Dialogues](https://arxiv.org/abs/2103.11151) EACL2021
+ 
+
 
 
 (3) [CLEVR-Dialog: A Diagnostic Dataset for Multi-Round Reasoning in Visual Dialog](https://www.aclweb.org/anthology/N19-1058) NAACL2019, [[code](https://github.com/satwikkottur/clevr-dialog)]
@@ -216,6 +184,11 @@ This is a paper list for the multimodal dialogue systems topic.
 - [OpenViDial: A Large-Scale, Open-Domain Dialogue Dataset with Visual Contexts](https://arxiv.org/abs/2012.15015)
 - [The PhotoBook Dataset: Building Common Ground through Visually-Grounded Dialogue](https://www.aclweb.org/anthology/P19-1184) ACL2019
 - [A Visually-Grounded Parallel Corpus with Phrase-to-Region Linking](https://www.aclweb.org/anthology/2020.lrec-1.518) LREC2020
+- Papers
+  - [Multi-Modal Open-Domain Dialogue](https://arxiv.org/abs/2010.01082) 2020
+  - [Open Domain Dialogue Generation with Latent Images](https://arxiv.org/abs/2004.01981) 2020
+  - [Image-Chat: Engaging Grounded Conversations] ACL2020
+  - [The Dialogue Dodecathlon: Open-Domain Knowledge and Image Grounded Conversational Agents](https://www.aclweb.org/anthology/2020.acl-main.222.pdf) ACL2020
 
 (?) sentiment
 - [MEISD: A Multimodal Multi-Label Emotion, Intensity and Sentiment Dialogue Dataset for Emotion Recognition and Sentiment Analysis in Conversations](https://www.aclweb.org/anthology/2020.coling-main.393) Coling2020
@@ -227,13 +200,22 @@ This is a paper list for the multimodal dialogue systems topic.
 - [CoDraw: Collaborative Drawing as a Testbed for Grounded Goal-driven Communication](https://www.aclweb.org/anthology/P19-1651) [[Data](https://github.com/facebookresearch/CoDraw)] ACL2019
 - [AirDialogue: An Environment for Goal-Oriented Dialogue Research](https://www.aclweb.org/anthology/D18-1419/) EMNLP2018
 - [ReferIt](http://tamaraberg.com/referitgame/) [[paper](http://tamaraberg.com/papers/referit.pdf)] in EMNLP2014, 2-players game of refer & label
+- Papers
+  - [Answerer in Questioner's Mind for Goal-Oriented Visual Dialogue](http://papers.neurips.cc/paper/7524-answerer-in-questioners-mind-information-theoretic-approach-to-goal-oriented-visual-dialog.pdf) [[Code](https://github.com/naver/aqm-plus)] NeurIPS 2018
+  - [End-to-end optimization of goal-driven and visually grounded dialogue systems](https://arxiv.org/abs/1703.05423) IJCAI2017
+  - [Learning Goal-Oriented Visual Dialog via Tempered Policy Gradient and Code](https://github.com/ruizhaogit/GuessWhat-TemperedPolicyGradient) IEEE2018
+  - [Answer-Driven Visual State Estimator for Goal-Oriented Visual Dialogue](https://arxiv.org/abs/2010.00361) [[Code](https://github.com/zipengxuc/ADVSE-GuessWhat)] ACM MM 2020
+  - [Building Task-Oriented Visual Dialog Systems Through Alternative Optimization Between Dialog Policy and Language Generation](https://www.aclweb.org/anthology/D19-1014) EMNLP2019
+  - [Storyboarding of Recipes: Grounded Contextual Generation](https://www.aclweb.org/anthology/P19-1606) [[Script Data](https://github.com/khyathiraghavi/storyboarding_data)] DGS@ICLR2019
+  - [Gold Seeker: Information Gain From Policy Distributions for Goal-Oriented Vision-and-Langauge Reasoning](https://arxiv.org/abs/1812.06398) CVPR2020
+
+(6) evaluation
+    - [A Revised Generative Evaluation of Visual Dialogue](https://arxiv.org/abs/2004.09272) [[Code](https://github.com/danielamassiceti/geneval_visdial)] arXiv2020
+    - [Evaluating Visual Conversational Agents via Cooperative Human-AI Games](https://arxiv.org/abs/1708.05122) [[Code for GuessWhich](https://github.com/GT-Vision-Lab/GuessWhich)] 2017
+    - [The Interplay of Task Success and Dialogue Quality: An in-depth Evaluation in Task-Oriented Visual Dialogues](https://arxiv.org/abs/2103.11151) EACL2021
 
 
-(6) Others
-- [Fatality Killed the Cat or: BabelPic, a Multimodal Dataset for Non-Concrete Concepts](https://www.aclweb.org/anthology/2020.acl-main.425.pdf) ACL2020
-- [How2: A Large-scale Dataset for Multimodal Language Understanding](https://arxiv.org/abs/1811.00347) [[Data](https://srvk.github.io/how2-dataset/)] NIPS2018
-
-(7) Games
+(7) classification
 - [**GuessWhat?!**](https://openaccess.thecvf.com/content_cvpr_2017/html/de_Vries_GuessWhat_Visual_Object_CVPR_2017_paper.html) Visual Object Discovery Through Multi-Modal Dialogue in CVPR2017, a two-player guessing game (1 oracle & 1 questioner). 
   - [[Code]](https://github.com/GuessWhatGame/guesswhat)
   - Further paper 
@@ -241,9 +223,12 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Guessing State Tracking for Visual Dialogue](https://github.com/GT-Vision-Lab/GuessWhich) ECCV2020
     - [Language-Conditioned Feature Pyramids for Visual Selection Tasks] EMNLP2020 [[Code](https://github.com/Alab-NII/lcfp)]
     - [Beyond task success: A closer look at jointly learning to see, ask, and GuessWhat](https://arxiv.org/abs/1809.03408) NAACL2019
+- [Interactive Classification by Asking Informative Questions](https://www.aclweb.org/anthology/2020.acl-main.237) [[Code](https://github.com/asappresearch/interactive-classification)] ACL2020
 
-- [Friend, Collaborator, Student, Manager: How Design of an AI-Driven Game Level Editor Affects Creators] CHI2019
 
+(?) Others
+- [Fatality Killed the Cat or: BabelPic, a Multimodal Dataset for Non-Concrete Concepts](https://www.aclweb.org/anthology/2020.acl-main.425.pdf) ACL2020
+- [How2: A Large-scale Dataset for Multimodal Language Understanding](https://arxiv.org/abs/1811.00347) [[Data](https://srvk.github.io/how2-dataset/)] NIPS2018
 
 
 (8) [Image caption] generating natural language description of an image
@@ -299,9 +284,29 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Grounding Conversations with Improvised Dialogues](https://www.aclweb.org/anthology/2020.acl-main.218.pdf) ACL2020
     - [A negative case analysis of visual grounding methods for VQA](https://www.aclweb.org/anthology/2020.acl-main.727.pdf) ACL2020
     - [Knowledge Supports Visual Language Grounding: A Case Study on Colour Terms](https://www.aclweb.org/anthology/2020.acl-main.584.pdf) ACL2020
+    - [Where Are You? Localization from Embodied Dialog](https://www.aclweb.org/anthology/2020.emnlp-main.59.pdf) [[Code](https://github.com/batra-mlp-lab/WAY)] EMNLP2020
+    - [Visual Referring Expression Recognition: What Do Systems Actually Learn?](https://www.aclweb.org/anthology/N18-2123) NAACL2018
+    - [Ask No More: Deciding when to guess in referential visual dialogue](https://www.aclweb.org/anthology/C18-1104) coling2018
+    - [Refer, Reuse, Reduce: Generating Subsequent References in Visual and Conversational Contexts](https://www.aclweb.org/anthology/2020.emnlp-main.353) EMNLP2020
+    - [Achieving Common Ground in Multi-modal Dialogue](https://www.aclweb.org/anthology/2020.acl-tutorials.3) ACL2020
+
+(10) retrieval task
+- image retrieval/visual retrieval
+  - [Exploring Phrase Grounding without Training: Contextualisation and Extension to Text-Based Image Retrieval](https://openaccess.thecvf.com/content_CVPRW_2020/papers/w56/Parcalabescu_Exploring_Phrase_Grounding_Without_Training_Contextualisation_and_Extension_to_Text-Based_CVPRW_2020_paper.pdf) CVPRW2020
+  - [Toward General Scene Graph: Integration of Visual Semantic Knowledge with Entity Synset Alignment](https://www.aclweb.org/anthology/2020.alvr-1.2) [[Code](https://github.com/videoturingtest/alvr-ESA) wow finally a code for graph] ALVR2020
+  - [Dialog-based Interactive Image Retrieval](https://arxiv.org/abs/1805.00145) [[Code Fashion retrieval](https://github.com/XiaoxiaoGuo/fashion-retrieval)] NeuIPS2018
+  - [I Want This Product but Different : Multimodal Retrieval with Synthetic Query Expansion](https://arxiv.org/abs/2102.08871) 2021
+  - [Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers](https://arxiv.org/abs/2103.16553) 2021 
 
 
-(10) Fashion 🌟🌟🌟 ----F-a-s-h-i-o-n----
+(11) image editing / text-to-image
+- [Sequential Attention GAN for Interactive Image Editing] ACM2020
+- [Tell, Draw, and Repeat: Generating and Modifying Images Based on Continual Linguistic Instruction] ICCV2019
+- [ChatPainter: Improving Text to Image Generation using Dialogue] ICLR2018
+- [Adversarial Text-to-Image Synthesis: A Review] 2021
+- [A Multimodal Dialogue System for Conversational Image Editing] 2020
+
+(12) Fashion 🌟🌟🌟 ----F-a-s-h-i-o-n----
 - [**SIMMC**](https://github.com/facebookresearch/simmc) - Domains include furniture and fashion 🌟🌟🌟, it can be seen as a variant of [multiWOZ](https://github.com/budzianowski/multiwoz) or [schema guided dialogue dataset](https://github.com/google-research-datasets/dstc8-schema-guided-dialogue#scheme-representation%5D)
   - [Situated and Interactive Multimodal Conversations](https://www.aclweb.org/anthology/2020.coling-main.96) EMNLP2020 [[SIMMC 1.0](https://arxiv.org/abs/2006.01460)] in Coling2020, [[SIMMC 2.0](https://arxiv.org/pdf/2104.08667.pdf)], track in [DSTC9](https://dstc9.dstc.community/home) and [DSTC10](https://sites.google.com/dstc.community/dstc10/tracks) 
   - [[Code](https://github.com/facebookresearch/simmc)] 
@@ -317,7 +322,7 @@ This is a paper list for the multimodal dialogue systems topic.
 
 ### Video
  
-(11) 
+(13) video
 - [Audio Visual Scene-Aware Dialog Track in DSTC8](http://workshop.colips.org/dstc7/dstc8/Audiovisual_Scene_Aware_Dialog.pdf) [[Paper]((https://ieeexplore.ieee.org/document/8953254)]  [[site]]((https://video-dialog.com/) 
   - [CMU Sinbad’s Submission for the DSTC7 AVSD Challenge]
   - [DSTC8-AVSD: Multimodal Semantic Transformer Network with Retrieval Style Word Generator] 2020
@@ -353,10 +358,10 @@ This is a paper list for the multimodal dialogue systems topic.
   
 
 ### Charts / figures
-(13) [LEAF-QA: Locate, Encode & Attend for Figure Question Answering](https://openaccess.thecvf.com/content_WACV_2020/papers/Chaudhry_LEAF-QA_Locate_Encode__Attend_for_Figure_Question_Answering_WACV_2020_paper.pdf)
+(14) [LEAF-QA: Locate, Encode & Attend for Figure Question Answering](https://openaccess.thecvf.com/content_WACV_2020/papers/Chaudhry_LEAF-QA_Locate_Encode__Attend_for_Figure_Question_Answering_WACV_2020_paper.pdf)
 
 ### Meme
-(14) [MOD Meme incorporated Open Dialogue](https://anonymous.4open.science/r/e7eaef6a-b6d5-47c6-896f-93265a0af4b1/README.md) WeChat conversations with meme / stickers in Chinese language.
+(15) [MOD Meme incorporated Open Dialogue](https://anonymous.4open.science/r/e7eaef6a-b6d5-47c6-896f-93265a0af4b1/README.md) WeChat conversations with meme / stickers in Chinese language.
 - A Multimodal Memes Classification: A Survey and Open Research Issues
 - [Learning to Respond with Stickers: A Framework of Unifying Multi-Modality in Multi-Turn Dialog] WWW2020
 - [Learning to Respond with Your Favorite Stickers: A Framework of Unifying Multi-Modality and User Preference in Multi-Turn Dialog] 2020
