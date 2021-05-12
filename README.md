@@ -97,10 +97,12 @@ This is a paper list for the multimodal dialogue systems topic.
     - [DualVD: An Adaptive Dual Encoding Model for Deep Visual Understanding in Visual Dialogue](https://arxiv.org/pdf/1911.07251.pdf) [[Code](https://github.com/JXZe/DualVD)] AAAI2020
     - [Learning Dual Encoding Model for Adaptive Visual Understanding in Visual Dialogue](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9247486) [[Code](https://github.com/JXZe/Learning_DualVD)] IEEE2021
     - [Vokenization: Improving Language Understanding with Contextualized, Visual-Grounded Supervision](https://www.aclweb.org/anthology/2020.emnlp-main.162) [[Code](https://github.com/airsplay/vokenization)] EMNLP2020   
-  - coreference
-    - [Modeling Coreference Relations in Visual Dialog](https://www.aclweb.org/anthology/2021.eacl-main.290) [[Code](https://github.com/facebookresearch/corefnmn) EACL2021
+  - coreference / reference
+    - [Modeling Coreference Relations in Visual Dialog](https://www.aclweb.org/anthology/2021.eacl-main.290) [[Code](https://github.com/facebookresearch/corefnmn)] EACL2021
     - [What You See is What You Get: Visual Pronoun Coreference Resolution in Dialogues](https://www.aclweb.org/anthology/D19-1516) [[Data Code](https://github.com/HKUST-KnowComp/Visual_PCR)] EMNLP2019
     - [Dual Attention Networks for Visual Reference Resolution in Visual Dialog](https://www.aclweb.org/anthology/D19-1209.pdf) [[Code](https://github.com/gicheonkang/DAN-VisDial)] EMNLP2019
+    - [Visual Reference Resolution using Attention Memory for Visual Dialog](http://papers.neurips.cc/paper/6962-visual-reference-resolution-using-attention-memory-for-visual-dialog.pdf) NIPS2017
+    - [Referring Expression Generation via Visual Dialogue](https://github.com/llxuan/ReferWhat) NLPCC2020
   - cross-modal / fusion / joint / dual ...
     - [Efficient Attention Mechanism for Handling All the Interactions between Many Inputs with Application to Visual Dialog](https://arxiv.org/abs/1911.11390) ECCV2019
     - [Image-Question-Answer Synergistic Network for Visual Dialog](https://openaccess.thecvf.com/content_CVPR_2019/papers/Guo_Image-Question-Answer_Synergistic_Network_for_Visual_Dialog_CVPR_2019_paper.pdf) CVPR2019
@@ -116,9 +118,6 @@ This is a paper list for the multimodal dialogue systems topic.
     - [Multi-View Attention Networks for Visual Dialog](https://arxiv.org/abs/2004.14025) [[Code](https://github.com/taesunwhang/MVAN-VisDial)] arXiv2020
     - [Efficient Attention Mechanism for Visual Dialog that Can Handle All the Interactions Between Multiple Inputs](https://arxiv.org/abs/1911.11390) [[Code](https://github.com/davidnvq/visdial)] ECCV2020
     - [Shuffle-Then-Assemble: Learning Object-Agnostic Visual Relationship Features](https://arxiv.org/abs/1808.00171) [[Code in TF](https://github.com/yangxuntu/vrd)] ECCV2018
-  - referring / embodiment 
-    - [Visual Reference Resolution using Attention Memory for Visual Dialog](http://papers.neurips.cc/paper/6962-visual-reference-resolution-using-attention-memory-for-visual-dialog.pdf) NIPS2017
-    - [Referring Expression Generation via Visual Dialogue](https://github.com/llxuan/ReferWhat) NLPCC2020
   - use dialog history / user guided
     - [Making History Matter: History-Advantage Sequence Training for Visual Dialog](https://arxiv.org/abs/1902.09326) ICCV2019
     - [User Attention-guided Multimodal Dialog Systems](https://xuemengsong.github.io/sigir2019_umd.pdf) [[Code](https://github.com/ChenTsuei/UMD)] SIGIR2019
@@ -373,6 +372,7 @@ This is a paper list for the multimodal dialogue systems topic.
 - [Trends in Integration of Vision and Language Research: A Survey of Tasks, Datasets, and Methods](https://arxiv.org/abs/1907.09358) JAIR2020
 
 # Other github paperlists
+- [Multimodal-Dialogue-PaperList](https://github.com/silverriver/Multimodal-Dialogue-PaperList)
 - [Awesome-Visual-Transformer](https://github.com/dk-liang/Awesome-Visual-Transformer)
 - [Transformer-in-Vision](https://github.com/DirtyHarryLYL/Transformer-in-Vision)
 - [awesome-multimodal-ml](https://github.com/pliang279/awesome-multimodal-ml)
