@@ -97,9 +97,10 @@ This is a paper list for the multimodal dialogue systems topic.
     - [DualVD: An Adaptive Dual Encoding Model for Deep Visual Understanding in Visual Dialogue](https://arxiv.org/pdf/1911.07251.pdf) [[Code](https://github.com/JXZe/DualVD)] AAAI2020
     - [Learning Dual Encoding Model for Adaptive Visual Understanding in Visual Dialogue](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9247486) [[Code](https://github.com/JXZe/Learning_DualVD)] IEEE2021
     - [Vokenization: Improving Language Understanding with Contextualized, Visual-Grounded Supervision](https://www.aclweb.org/anthology/2020.emnlp-main.162) [[Code](https://github.com/airsplay/vokenization)] EMNLP2020   
-  - coreference / reference
+  - coreference 
     - [Modeling Coreference Relations in Visual Dialog](https://www.aclweb.org/anthology/2021.eacl-main.290) [[Code](https://github.com/facebookresearch/corefnmn)] EACL2021
     - [What You See is What You Get: Visual Pronoun Coreference Resolution in Dialogues](https://www.aclweb.org/anthology/D19-1516) [[Data Code](https://github.com/HKUST-KnowComp/Visual_PCR)] EMNLP2019
+  - reference
     - [Dual Attention Networks for Visual Reference Resolution in Visual Dialog](https://www.aclweb.org/anthology/D19-1209.pdf) [[Code](https://github.com/gicheonkang/DAN-VisDial)] EMNLP2019
     - [Visual Reference Resolution using Attention Memory for Visual Dialog](http://papers.neurips.cc/paper/6962-visual-reference-resolution-using-attention-memory-for-visual-dialog.pdf) NIPS2017
     - [Referring Expression Generation via Visual Dialogue](https://github.com/llxuan/ReferWhat) NLPCC2020
