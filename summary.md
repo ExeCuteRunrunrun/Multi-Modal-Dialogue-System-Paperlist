@@ -7,10 +7,13 @@ across various visual-linguistic tasks in the research community. It comprises o
 wherein the main goal is to automate machine conversations about images with humans. 
 
 The referred survey defines the formats of output in purpose of distinguish "generation task" and "classification task": 
+
 > The output of the learnt mapping *f* could either belong to a set
 of possible answers in which case we refer this task format
 as MCQ, or could be arbitrary in nature depending on the
 question in which we can refer to as free-form. We regard the
 more generalized free-form VQA as a generation task, while
 MCQ VQA as a classification task where the model predicts
-the most suitable answer from a pool of choices.
+the most suitable answer from a pool of choices. 
+
+
