@@ -16,4 +16,8 @@ more generalized free-form VQA as a generation task, while
 MCQ VQA as a classification task where the model predicts
 the most suitable answer from a pool of choices. 
 
+Generally, classical VQA datasets/tasks like VQA 1.0 & 2.0 apply MCQ format of output while visual dialogue tasks and VQG tasks on VQA 2.0 have *free form* format of output. Specifically, the survey takes out separately the Visual Commensense Reasoning as a popular task in parallel to VQA tasks, which aims to develop higherorder cognition in vision systems and commonsense reasoning of the world so that they can provide justifications to their answers.
+
+I have to mention VQA because it's a group of classical and living datasets and tasks that are incontourable before talking about Visual Dialogue, and many of the most popular issues and topics and methods affect also those in visual dialogues, like reasoning, deep understanding, modality bias, etc., while in special, the works about VCR show a special kind of enthusiasm in using bertology methods like Vi-Bert, VisualBERT, VL-Bert,
+KVL-BERT, etc. (A paper about [The Exploration of the Reasoning Capability of BERT in Relation Extraction](https://ieeexplore.ieee.org/document/9202183) but it was published only in 2020. So why suddenly a bunch of Bertologies in Visual-Language research keeps to be a mistery for me...) Of course, in visual dialogue tasks we have bertology methods, like VD-BERT. 
 
