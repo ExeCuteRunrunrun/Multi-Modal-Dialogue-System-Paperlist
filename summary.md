@@ -21,3 +21,23 @@ Generally, classical VQA datasets/tasks like VQA 1.0 & 2.0 apply MCQ format of o
 I have to mention VQA because it's a group of classical and living datasets and tasks that are incontourable before talking about Visual Dialogue, and many of the most popular issues and topics and methods affect also those in visual dialogues, like reasoning, deep understanding, modality bias, etc., while in special, the works about VCR show a special kind of enthusiasm in using bertology methods like Vi-Bert, VisualBERT, VL-Bert,
 KVL-BERT, etc. (A paper about [The Exploration of the Reasoning Capability of BERT in Relation Extraction](https://ieeexplore.ieee.org/document/9202183) but it was published only in 2020. So why suddenly a bunch of Bertologies in Visual-Language research keeps to be a mistery for me...) Of course, in visual dialogue tasks we have bertology methods, like VD-BERT. 
 
+| Article        | Dataset           | Visual Encoder  | Language Model | Encoder | Decoder |
+| ------------- |:-------------:|:---------------:|:------------:|:----------:|:---------:|
+| [Visual dialog](https://arxiv.org/pdf/1611.08669.pdf)| VisDial v1.0 | VGG16 | 2 diff LSTMs; dialog-RNN + Attention + LSTM ; LSTM | Late fusion ; HRE ; MN| LSTM, Softmax |
+| [IQA Synergistic](https://openaccess.thecvf.com/content_CVPR_2019/papers/Guo_Image-Question-Answer_Synergistic_Network_for_Visual_Dialog_CVPR_2019_paper.pdf)| VisDial v1.0 |Faster-RCNN, CNN  | 2 diff LSTMs | MFB ; (discriminative model: in primary stage, answers are also encoded by LSTM)| softmax; (generative model: answer decoded by LSTM)|
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
+| [LTMI](https://arxiv.org/pdf/1911.11390.pdf) | VisDial v1.0 |  |  | 
+| [LF]      | centered      |    |  |  | fusion by concat |  |
